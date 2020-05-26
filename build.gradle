@@ -1,3 +1,20 @@
+
+repositories  {
+    mavenCentral()
+}
+
+apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
+group = "ichttt"
+version = "1.0"
+
+dependencies {
+    compile 'com.google.code.gson:gson:2.8.2'
+}
+
 publishing {
   repositories {
     maven {
@@ -15,20 +32,4 @@ publishing {
       from(components.java)
     }
   }
-}
-
-repositories  {
-    mavenCentral()
-}
-
-apply plugin: 'maven'
-apply plugin: 'java'
-apply plugin: 'maven-publish'
-
-sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
-group = "ichttt"
-version = "1.0"
-
-dependencies {
-    compile 'com.google.code.gson:gson:2.8.2'
 }
