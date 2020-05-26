@@ -23,6 +23,7 @@ repositories  {
 
 apply plugin: 'maven'
 apply plugin: 'java'
+apply plugin: 'maven-publish'
 
 sourceCompatibility = targetCompatibility = JavaVersion.VERSION_1_8
 group = "ichttt"
