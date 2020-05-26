@@ -96,7 +96,7 @@ public class LangConverterGui implements ActionListener {
     }
 
     public static String getIntent() {
-        String intent = ALLOWED_INTENT[intents.getSelectedIndex()]; // Gets selected option from JComboBox; intents = JComboBox
+        String intent = ALLOWED_INTENT[intents.getSelectedIndex()];
         switch (intent) {
             case "2x Space":
                 return "  ";
